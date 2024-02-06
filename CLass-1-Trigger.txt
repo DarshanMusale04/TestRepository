@@ -1,0 +1,10 @@
+public with sharing class CreateContactuUilityAfterAccount {
+    public static void CreateContact(List<account> accList){
+        List<contact> conList = new List<contact>();
+        for(account acc : acclist){
+            Contact con = new Contact(Lastname=acc.name, accountId=acc.id, email='createContactafteraccountinsert@gmail.com');
+            conList.add(con);
+        }insert conList;
+    }
+
+}
